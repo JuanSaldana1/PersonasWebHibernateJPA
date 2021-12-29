@@ -8,10 +8,11 @@ import java.util.List;
 public class ServicioPersonas {
     private PersonaDAO personaDao;
 
-    public ServicioPersonas(){
+    public ServicioPersonas() {
         this.personaDao = new PersonaDAO();
     }
-    public List<Persona> listarPersonas(){
+
+    public List<Persona> listarPersonas() {
         return this.personaDao.listar();
     }
 }
